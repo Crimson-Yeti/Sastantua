@@ -16,8 +16,13 @@ sastantua.c is a complete program, and can be run through any C compiler to crea
 
 #### Running the Program
 
-The executable looks for input 
+The executable can be given any number of pyramids to be built when called from the command line. Size must be greater than one, and the different sizes given must be dilimted by a space.
 
+> ./sastantua 1 2 3
+
+If an invalid size is given an error will be printed in place of a pyramid
+
+> \*\*\*Argument "\<argument\>" Invalid\*\*\*
 
 ### What the Size Input Controlls
 
