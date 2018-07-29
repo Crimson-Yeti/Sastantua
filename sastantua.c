@@ -8,7 +8,7 @@ void sastantua(int size);
 
 /*
 Our main function is set up to take multiple inputs from the command line, and build all of the pyramids
-to the size specified
+to the size specified.
 */
 
 int main(int argc, char **argv)
@@ -54,7 +54,7 @@ void sastantua(int size)
 /*
 ft_print_row takes in the number of characters at the bottom of our pyramid (max_chars), the number of characters
 in our current row (chars), and the size of our door (door), and assembles our pyramid level by level with the
-information
+information.
 */
 
 void ft_print_row(int max_chars, int chars, int door)
