@@ -9,3 +9,5 @@
 ### What the Size Input Controlls
 
 Obviously, when we increase the our given size, the size of the pyramid increases. 
+
+To be more specific though, the elements being controlled by size are the amount of tiers contained in our pyramid and the size of the door.
