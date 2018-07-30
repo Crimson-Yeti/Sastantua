@@ -20,7 +20,7 @@ The executable can be given any number of pyramids to be built when called from 
 
 > ./sastantua 1 3 5
 
-Will output
+will output
 ```
 Size 1
 |  /*\
@@ -73,7 +73,7 @@ If an invalid size is given an error will be printed in place of a pyramid
 
 > ./sastantua 1 a 2
 
-Will output
+will output
 ```
 Size 1
 |  /*\
@@ -96,4 +96,21 @@ Size 2
 
 ### Size Input
 
-  
+Intuitivly, the larger the size we give the program, the larger the pyramid generted. Our size input directly controlls the amount of **tiers** in our pyramid. Perhaps less intuitivly though is the fact that not all tiers are created equally. As with any sturdy stucture, our tiers increase in size as they near the bottom of the pyramid. **Tier Growth** will cover the rules followed when building each tier.
+
+#### Tier Growth
+
+![sastantuatiers](https://user-images.githubusercontent.com/41135333/43378842-10959190-937e-11e8-8800-701656117833.png)
+
+As can be seen in the chart above, there's a consitent progression to the size of our pyramid's tiers.
+
+##### Row Count Incramentation
+* The first tier starts at 3 rows, and every tier after the first will always have one more row than the one above it.
+    * The equation for this rule is as follows
+      >Number of Rows = Tier + 2
+##### Character Count Incrementation
+* The first row of the first tier will always contain 3 characters.
+* Any row within the same tier as the row above it will always contain 2 more characters that the row above it.
+* Any first row of any tier greater than 1 will always contain current tier number + 3 if the current tier number is odd and current tier number + 4 if the current tier number is even.
+    * The equation for this rule is as follows
+     > i % 2 == 0 ? i + 4 : i + 3
