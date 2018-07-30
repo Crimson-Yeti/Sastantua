@@ -11,8 +11,9 @@
 #### Compilation
 
 sastantua.c is a complete program, and can be run through any C compiler to create an executable program that can be ran in the user's terminal.
-
-> gcc -o sastantua sastantua.c
+```
+gcc -o sastantua sastantua.c
+```
 
 #### Running the Program
 
