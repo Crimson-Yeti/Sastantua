@@ -112,7 +112,7 @@ Size 2
 
 ### Size Input
 
-Intuitivly, the larger the size we give the program, the larger the pyramid generted. Our size input directly controlls the amount of **tiers** in our pyramid, and the size of the door. As with any sturdy stucture, our tiers increase in size as they near the bottom of the pyramid, and stylisticly the size of our door increases with the size of the pyramid.
+Intuitively, the larger the size we give the program, the larger the pyramid generated. Our size input directly controls the amount of **tiers** in our pyramid, and the size of the door. As with any sturdy structure, our tiers increase in size as they near the bottom of the pyramid, and stylistically the size of our door increases with the size of the pyramid.
 
 #### Tier Growth
 
@@ -120,7 +120,7 @@ Intuitivly, the larger the size we give the program, the larger the pyramid gene
 
 As can be seen in the chart above, there's a predictable progression to the size of our pyramid's tiers.
 
-##### Row Count Incramentation
+##### Row Count Incrementation
 * The top tier starts at 3 rows, and every tier after the first will always have one more row than the one above it.
     * The equation for this rule is as follows
       > Number of Rows = Tier + 2
@@ -133,7 +133,7 @@ As can be seen in the chart above, there's a predictable progression to the size
 
 #### Building the Door
 
-When building a pyramid, the size of the door stylitically needs to scale with the size of the overall structure. Our door is created using a simple set of rules.
+When building a pyramid, the size of the door stylistically needs to scale with the size of the overall structure. Our door is created using a simple set of rules.
 
 ##### Height and Width
 * The height and width will always be match.
