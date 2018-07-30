@@ -118,7 +118,7 @@ As can be seen in the chart above, there's a predictable progression to the size
 ##### Row Count Incramentation
 * The top tier starts at 3 rows, and every tier after the first will always have one more row than the one above it.
     * The equation for this rule is as follows
-      >Number of Rows = Tier + 2
+      > Number of Rows = Tier + 2
 ##### Character Count Incrementation
 * The top tier starts at 3 characters.
 * Any row within the same tier as the row above it will always contain 2 more characters that the row above it.
@@ -128,4 +128,14 @@ As can be seen in the chart above, there's a predictable progression to the size
 
 #### Building the Door
 
-The door of the pyramid is
+When building a pyramid, the size of the door stylitically needs to scale with the size of the overall structure. Our door is created using a simple set of rules.
+
+##### Height and Width
+* The height and width will always be match.
+* The height and width are equal to (size of pyramid) if the size of the pyramid is odd, or (size of pyramid - 1) if the size of the pyramid is even.
+    * The equation for this rule is as follows
+      > size = (size % 2 == 0 ? size - 1 : size)
+##### Door Knob
+* A door knob will only be shown if the size of the door is greater than 3.
+* The door knob is represented by a single dollar sign "$".
+* The door knob is centered vertically between the top and bottom of the door, and one plank "|" from the right edge of the door. 
