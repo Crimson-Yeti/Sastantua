@@ -18,7 +18,9 @@ sastantua.c is a complete program, and can be run through any C compiler to crea
 
 The executable can be given any number of pyramids to be built when called from the command line. Size must be greater than one, and the different sizes given must be delimited by a space.
 
-> ./sastantua 1 3 5
+```
+./sastantua 1 3 5
+```
 
 will output
 ```
@@ -71,7 +73,9 @@ Size 5
 
 If an invalid size is given an error will be printed in place of a pyramid
 
-> ./sastantua 1 a 2
+```
+./sastantua 1 a 2
+```
 
 will output
 ```
