@@ -112,7 +112,7 @@ Size 2
 
 ### Size Input
 
-Intuitively, the larger the size we give the program, the larger the pyramid generated. Our size input directly controls the amount of **tiers** in our pyramid, and the size of the door. As with any sturdy structure, our tiers increase in size as they near the bottom of the pyramid, and stylistically the size of our door increases with the size of the pyramid.
+Intuitively, the larger the size we give the program, the larger the pyramid generated. Our size input directly controls the amount of tiers in our pyramid, and the size of the door. As with any sturdy structure, our tiers increase in size as they near the bottom of the pyramid, and stylistically the size of our door increases with the size of the pyramid.
 
 #### Tier Growth
 
