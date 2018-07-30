@@ -12,7 +12,7 @@
 
 sastantua.c is a complete program, and can be run through any C compiler to create an executable program that can be ran in the user's terminal.
 
-> gcc -Wall -Wextra -Werror -o sastantua sastantua.c
+> gcc -o sastantua sastantua.c
 
 #### Running the Program
 
@@ -21,7 +21,8 @@ The executable can be given any number of pyramids to be built when called from 
 > ./sastantua 1 3 5
 
 Will output
-```Size 1
+```
+Size 1
 |  /*\
 | /***\
 |/**|**\
@@ -73,7 +74,8 @@ If an invalid size is given an error will be printed in place of a pyramid
 > ./sastantua 1 a 2
 
 Will output
-```Size 1
+```
+Size 1
 |  /*\
 | /***\
 |/**|**\
@@ -92,8 +94,6 @@ Size 2
 |/********|********\
 ```
 
-### What the Size Input Controls
+### Size Input
 
-Obviously, when we increase the our given size, the size of the pyramid increases. 
-
-To be more specific though, the elements being controlled by size are the amount of tiers contained in our pyramid and the size of the door.
+  
