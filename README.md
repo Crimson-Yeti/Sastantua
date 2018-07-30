@@ -2,7 +2,7 @@
 
 ---
 
-### A program that builds the Ice Crystal Pyramids of Sastantua in ascii characters for it's the user.
+### A program that builds the Ice Crystal Pyramids of Sastantua in ascii characters for it's user.
 
 ---
 
