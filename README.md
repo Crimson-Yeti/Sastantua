@@ -127,7 +127,7 @@ As can be seen in the chart above, there's a predictable progression to the size
 ##### Character Count Incrementation
 * The top tier starts at 3 characters.
 * Any row within the same tier as the row above it will always contain 2 more characters that the row above it.
-* The first row of any tier below the first, contains (current tier number + 3) more characters than the row above it if the current tier number is odd, or (current tier number + 4) more characters than the row above it if the current tier number is even.
+* The first row for all tiers below the top contain (current tier number + 3) more characters than the row above it if the current tier number is odd, or (current tier number + 4) more characters than the row above it if the current tier number is even.
     * The equation for this rule is as follows
       > i % 2 == 0 ? i + 4 : i + 3
 
