@@ -24,7 +24,8 @@ gcc -o sastantua sastantua.c
 #### Running the Program
 
 The executable can be given any number of pyramids to be built when called from the command line. Size must be greater than one, and the different sizes given must be delimited by a space.
-
+##### Example
+---
 ```
 ./sastantua 1 3 5
 ```
@@ -77,9 +78,12 @@ Size 5
 | /*******************************|||||*******************************\
 |/********************************|||||********************************\
 ```
+---
 
 If an invalid size is given an error will be printed in place of a pyramid
 
+##### Example
+---
 ```
 ./sastantua 1 a 2
 ```
@@ -104,6 +108,7 @@ Size 2
 | /***************\
 |/********|********\
 ```
+---
 
 ### Size Input
 
