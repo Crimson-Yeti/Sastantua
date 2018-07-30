@@ -2,7 +2,7 @@
 
 > Allosimanius Syneca is a cold, snowy, beautiful planet. It is so beautiful that if you stood on top of the Ice Crystal Pyramids of Sastantua, it is possible that your brain will fall out due to unobserved beauty. 
 
-## A program that builds the Ice Crystal Pyramids of Sastantua in ascii characters for it's the user. The amount of pyramids to be built, and the sizes there of can be specified when that user calls the program.
+### A program that builds the Ice Crystal Pyramids of Sastantua in ascii characters for it's the user. The amount of pyramids to be built, and the sizes there of can be specified when that user calls the program.
 
 ![sastantua](https://user-images.githubusercontent.com/41135333/43361212-096aed1c-927e-11e8-815e-d5d0e6777507.PNG)
 
@@ -96,7 +96,7 @@ Size 2
 
 ### Size Input
 
-Intuitivly, the larger the size we give the program, the larger the pyramid generted. Our size input directly controlls the amount of **tiers** in our pyramid, and as with any sturdy stucture, our tiers increase in size as they near the bottom of the pyramid.
+Intuitivly, the larger the size we give the program, the larger the pyramid generted. Our size input directly controlls the amount of **tiers** in our pyramid, and the size of the door. As with any sturdy stucture, our tiers increase in size as they near the bottom of the pyramid, and stylisticly the size of our door increases with the size of the pyramid.
 
 #### Tier Growth
 
@@ -105,12 +105,16 @@ Intuitivly, the larger the size we give the program, the larger the pyramid gene
 As can be seen in the chart above, there's a predictable progression to the size of our pyramid's tiers.
 
 ##### Row Count Incramentation
-* The first tier starts at 3 rows, and every tier after the first will always have one more row than the one above it.
+* The top tier starts at 3 rows, and every tier after the first will always have one more row than the one above it.
     * The equation for this rule is as follows
       >Number of Rows = Tier + 2
 ##### Character Count Incrementation
-* The first row of the first tier will always contain 3 characters.
+* The top tier starts at 3 characters.
 * Any row within the same tier as the row above it will always contain 2 more characters that the row above it.
-* Any first row of any tier greater than 1 will always contain current tier number + 3 if the current tier number is odd and current tier number + 4 if the current tier number is even.
+* The first row of any tier below the contains (current tier number + 3) more characters than the row above it if the current tier number is odd or (current tier number + 4) more characters than the row above it if the current tier number is even.
     * The equation for this rule is as follows
       > i % 2 == 0 ? i + 4 : i + 3
+
+#### Building the Door
+
+The door of the pyramid is
